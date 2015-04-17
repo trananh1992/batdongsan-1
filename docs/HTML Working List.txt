@@ -1,0 +1,14 @@
+Missing pages:
+1 - About Us
+2 - Contact Us
+3 - Enquiry Form(Use as dedault layout, refer Spec for detail)
+4 - Home Product Detail(CMS - Use layout as same LifeStyle Detail page, refer Spec for detail)
+5 - Services detail(CMS - Use as same LifeStyle Detail page, refer Spec for detail)
+6 - News & Events Detail page(CMS - Use layout as same LifeStyle Detail page, refer Spec for detail)
+Fixing pages:
+1 - Interior Designer Detail (refer to HTML_Hot Fix_Interior Designer Page.png)
+2 - Special Deal detail page: click to "SNATCH NOW" button to show a popup with 
+        + email address text box
+        + send button
+
+

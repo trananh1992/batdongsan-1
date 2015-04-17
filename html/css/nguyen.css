@@ -1,0 +1,106 @@
+body {
+  background-color: #dcdcdc;
+  font-size: 13px;
+}
+/*.dropdown:hover .dropdown-menu {
+    display: block;
+ }*/
+.main-panel-primary {
+  /*border-color: #ccc !important;*/
+  box-shadow: 1px 0px 10px 2px #898989;
+}
+#form_search_top{
+	padding-bottom: 10px;
+}
+#form_search_top .col-sm-2{
+	  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+ .jumbotron{
+ 	  border-top-left-radius: 6px;
+	  border-top-right-radius: 6px;
+	  border-bottom-right-radius: 0px !important;
+	  border-bottom-left-radius: 0px !important;
+     margin-bottom: 0px !important; 
+ }
+ .panel-body{  
+ 	padding-top: 15px;
+  	padding-right: 0px !important;
+  	padding-bottom: 15px;
+  	padding-left: 0px !important;
+}
+
+
+.item{
+	margin-bottom: 20px;
+}
+.item_tieu_de{
+	background-color: #ccc;
+	margin-bottom: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.item_tieu_de_name{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #000;
+	line-height: 16px;
+	/*color: #424649;*/
+	text-decoration: none;
+	font-size: 13px;
+  	font-weight: bold;
+}
+
+.item_tieu_de_xem_chi_tiet a{
+	color: blue;
+}
+.item_content{
+	padding-bottom: 20px;
+}
+
+.item-col-3{
+	background: none repeat scroll 0 0 #fef4f3;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+
+.index_nha_dang_ban{
+	border-bottom: 1px solid #7c0b0b;
+  	/*margin-top: 20px;*/
+  	padding-top: 10px;
+  	margin-bottom: 20px;
+  /*margin-left: 30px !important;*/
+}
+
+.index_dat_dang_ban{
+	border-bottom: 1px solid #7c0b0b;
+  	/*margin-top: 20px;*/
+  	padding-top: 10px;
+  	margin-bottom: 20px;
+  /*margin-left: 30px !important;*/
+}
+
+
+#footer{
+  color: #fff;
+  /*text-align: center;*/
+  background-color: #343128;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#footer ul li{
+  list-style: none;
+  list-style-type: none;
+}
+
+#footer_ban_quyen{
+	background-color: #181818; padding:10px; 
+	color: #f1f1f1;
+}

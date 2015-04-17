@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <!-- css -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/nguyen.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+//   $(function(){
+//     $('.dropdown').hover(function() {
+//          $(this).toggleClass('open');
+//     });
+// });
+
+//   $(document).ready(function(){
+//     $('ul.nav li.dropdown').hover(function() {
+//       $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+//     }, function() {
+//       $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+//     });  
+// });
+
+  $(document).ready(function () {
+    $('.navbar-default .navbar-nav > li.dropdown').hover(function () {
+        $('ul.dropdown-menu', this).stop(true, true).slideDown('fast');
+        $(this).addClass('open');
+    }, function () {
+        $('ul.dropdown-menu', this).stop(true, true).slideUp('fast');
+        $(this).removeClass('open');
+    });
+});
+
+  </script>
+  <!-- <script src="js/menu_hover.js"></script> -->
+  <!-- <script>
+    $(document).ready(function() {
+      $('.js-activated').dropdownHover().dropdown();
+    });
+  </script> -->
+
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+      <img class="img-responsive" src="images/logo_head.jpg"  style="width:auto; height: 200px;" />
+      <nav class="navbar navbar-default navbar-inverse">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Trang Chủ</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <!-- <li class="active"><a href="#">Bán Nhà <span class="sr-only">(current)</span></a></li> -->
+                <!-- <li><a href="#">Bán Đất</a></li> -->
+                <li class="dropdown active">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bán Nhà <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Bán nhà dĩ an</a></li>
+                    <li><a href="#">Bán nhà phường A</a></li>
+                    <li><a href="#">Bán nhà phường B</a></li>
+                    <li><a href="#">Bán nhà phường C</a></li>
+                    <li><a href="#">Bán nhà phường D</a></li>
+                    <!-- <li class="divider"></li> -->
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bán Đất <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Bán Đất dĩ an</a></li>
+                    <li><a href="#">Bán Đất phường A</a></li>
+                    <li><a href="#">Bán Đất phường B</a></li>
+                    <li><a href="#">Bán Đất phường C</a></li>
+                    <li><a href="#">Bán Đất phường D</a></li>
+                    <!-- <li class="divider"></li> -->
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cho thuê <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Cho thuê nhà</a></li>
+                    <li><a href="#">Cho thuê đất</a></li>
+                    <!-- <li class="divider"></li> -->
+                  </ul>
+                </li>
+                
+                <li><a href="#">About Us</a></li>
+
+                <li><a href="#">Liên Hệ</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+</div>
+
+<!-- search form -->
+<div class="container" >
+    <div class="row col-sm-12">
+        <form class="form" role="search" id="form_search_top" >
+        
+          <div class="col-sm-2">
+            <select class="form-control">
+                <option>Loại dịch vụ</option>
+                <option>Nhà bán</option>
+                <option>Đất bán</option>
+            </select>
+          </div>
+
+          <div class="col-sm-2">
+              <select class="form-control">
+                  <option>Khu Vực</option>
+                  <option>Địa diểm</option>
+                  <option>Địa diểm</option>
+              </select>
+          </div>
+        
+          <div class="col-sm-2">
+              <select class="form-control">
+                  <option>Giá</option>
+                  <option>0 -> 100 triệu</option>
+                  <option>100->200</option>
+                  <option>200->500</option>
+                  <option>500->1 ty</option>
+                  <option>hon 1 ty</option>
+              </select>
+          </div>
+          <div class="col-sm-2">
+              <select class="form-control">
+                  <option>Điện tích</option>
+                  <option>Từ 0 -> 50 m2</option>
+                  <option>Từ 50 -> 100 m2</option>
+                  <option>Từ 100 -> 200 m2</option>
+                  <option>Hơn 200 m2</option>
+              </select>
+          </div>
+        <div class="col-sm-2 form-group">
+            <input type="text" class="form-control" placeholder="nhập tiêu đề tin"/>
+        </div>
+        <div class="col-sm-2">
+                <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+        </div>
+        </form>
+
+    </div>
+</div>
+
+<!-- Main content -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="panel panel-primary  main-panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title" id="panel-title"><span class="glyphicon glyphicon-star"></span> Tin Mới Cập Nhập<a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
+              </div>
+              <div class="panel-body">
+                    <div class="item row-fluid">
+                        <div class="col-sm-12 item_tieu_de">
+                            <div class="col-sm-9 item_tieu_de_name">Bán nhà 2 mặt tiền đường rộng 6m DT = 78m2 ở dĩ an</div>
+                            <div class="col-sm-3  item_tieu_de_xem_chi_tiet">
+                                <div class="pull-right"><a href="#">xem chi tiết</a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 item_content">
+                              <img class="col-sm-2 img-responsive img-thumbnail" src="images/abc.jpg" alt=""/>
+                              <div class="col-sm-7">
+                                  Tôi cần bán 1 căn nhà lầu ở dĩ an: – Nhà nằm trên 2 mặt tiền đẹp, đường rộng 6m – Nhà nằm trong khu dân cư, đường thông buôn bán được. – Nhà 1 lầu 1 trệt có 3 phòng ngủ, 3 phòng vệ sinh   – Nhà bán
+                              </div>
+                              <div class="col-sm-3 item-col-3">
+                                <b>Mã số:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Giá:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Khu vực:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Lượt xem:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Ngày đăng:</b><span class="item_gia">Liên hệ</span> <br/>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="item row-fluid">
+                        <div class="col-sm-12 item_tieu_de">
+                            <div class="col-sm-9 item_tieu_de_name">Bán nhà 2 mặt tiền đường rộng 6m DT = 78m2 ở dĩ an</div>
+                            <div class="col-sm-3  item_tieu_de_xem_chi_tiet">
+                                <div class="pull-right"><a href="#">xem chi tiết</a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 item_content">
+                              <img class="col-sm-2 img-responsive img-thumbnail" src="images/abc.jpg" alt=""/>
+                              <div class="col-sm-7">
+                                  Tôi cần bán 1 căn nhà lầu ở dĩ an: – Nhà nằm trên 2 mặt tiền đẹp, đường rộng 6m – Nhà nằm trong khu dân cư, đường thông buôn bán được. – Nhà 1 lầu 1 trệt có 3 phòng ngủ, 3 phòng vệ sinh   – Nhà bán
+                              </div>
+                              <div class="col-sm-3 item-col-3">
+                                <b>Mã số:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Giá:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Khu vực:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Lượt xem:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Ngày đăng:</b><span class="item_gia">Liên hệ</span> <br/>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="item row-fluid">
+                        <div class="col-sm-12 item_tieu_de">
+                            <div class="col-sm-9 item_tieu_de_name">Bán nhà 2 mặt tiền đường rộng 6m DT = 78m2 ở dĩ an</div>
+                            <div class="col-sm-3  item_tieu_de_xem_chi_tiet">
+                                <div class="pull-right"><a href="#">xem chi tiết</a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 item_content">
+                              <img class="col-sm-2 img-responsive img-thumbnail" src="images/abc.jpg" alt=""/>
+                              <div class="col-sm-7">
+                                  Tôi cần bán 1 căn nhà lầu ở dĩ an: – Nhà nằm trên 2 mặt tiền đẹp, đường rộng 6m – Nhà nằm trong khu dân cư, đường thông buôn bán được. – Nhà 1 lầu 1 trệt có 3 phòng ngủ, 3 phòng vệ sinh   – Nhà bán
+                              </div>
+                              <div class="col-sm-3 item-col-3">
+                                <b>Mã số:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Giá:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Khu vực:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Lượt xem:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Ngày đăng:</b><span class="item_gia">Liên hệ</span> <br/>
+                              </div>
+                        </div>
+                    </div>
+
+
+
+                    
+              </div>
+            </div>
+
+
+            <div class="panel panel-primary  main-panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title" id="panel-title"><span class="glyphicon glyphicon-star"></span> Tin Được Xem Nhiều<a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
+              </div>
+              <div class="panel-body">
+                    <div class="item row-fluid">
+                        <div class="col-sm-12 item_tieu_de">
+                            <div class="col-sm-9 item_tieu_de_name">Bán nhà 2 mặt tiền đường rộng 6m DT = 78m2 ở dĩ an</div>
+                            <div class="col-sm-3  item_tieu_de_xem_chi_tiet">
+                                <div class="pull-right"><a href="#">xem chi tiết</a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 item_content">
+                              <img class="col-sm-2 img-responsive img-thumbnail" src="images/abc.jpg" alt=""/>
+                              <div class="col-sm-7">
+                                  Tôi cần bán 1 căn nhà lầu ở dĩ an: – Nhà nằm trên 2 mặt tiền đẹp, đường rộng 6m – Nhà nằm trong khu dân cư, đường thông buôn bán được. – Nhà 1 lầu 1 trệt có 3 phòng ngủ, 3 phòng vệ sinh   – Nhà bán
+                              </div>
+                              <div class="col-sm-3 item-col-3">
+                                <b>Mã số:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Giá:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Khu vực:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Lượt xem:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Ngày đăng:</b><span class="item_gia">Liên hệ</span> <br/>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="item row-fluid">
+                        <div class="col-sm-12 item_tieu_de">
+                            <div class="col-sm-9 item_tieu_de_name">Bán nhà 2 mặt tiền đường rộng 6m DT = 78m2 ở dĩ an</div>
+                            <div class="col-sm-3  item_tieu_de_xem_chi_tiet">
+                                <div class="pull-right"><a href="#">xem chi tiết</a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 item_content">
+                              <img class="col-sm-2 img-responsive img-thumbnail" src="images/abc.jpg" alt=""/>
+                              <div class="col-sm-7">
+                                  Tôi cần bán 1 căn nhà lầu ở dĩ an: – Nhà nằm trên 2 mặt tiền đẹp, đường rộng 6m – Nhà nằm trong khu dân cư, đường thông buôn bán được. – Nhà 1 lầu 1 trệt có 3 phòng ngủ, 3 phòng vệ sinh   – Nhà bán
+                              </div>
+                              <div class="col-sm-3 item-col-3">
+                                <b>Mã số:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Giá:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Khu vực:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Lượt xem:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Ngày đăng:</b><span class="item_gia">Liên hệ</span> <br/>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="item row-fluid">
+                        <div class="col-sm-12 item_tieu_de">
+                            <div class="col-sm-9 item_tieu_de_name">Bán nhà 2 mặt tiền đường rộng 6m DT = 78m2 ở dĩ an</div>
+                            <div class="col-sm-3  item_tieu_de_xem_chi_tiet">
+                                <div class="pull-right"><a href="#">xem chi tiết</a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 item_content">
+                              <img class="col-sm-2 img-responsive img-thumbnail" src="images/abc.jpg" alt=""/>
+                              <div class="col-sm-7">
+                                  Tôi cần bán 1 căn nhà lầu ở dĩ an: – Nhà nằm trên 2 mặt tiền đẹp, đường rộng 6m – Nhà nằm trong khu dân cư, đường thông buôn bán được. – Nhà 1 lầu 1 trệt có 3 phòng ngủ, 3 phòng vệ sinh   – Nhà bán
+                              </div>
+                              <div class="col-sm-3 item-col-3">
+                                <b>Mã số:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Giá:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Khu vực:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Lượt xem:</b><span class="item_gia">Liên hệ</span> <br/>
+                                <b>Ngày đăng:</b><span class="item_gia">Liên hệ</span> <br/>
+                              </div>
+                        </div>
+                    </div>
+
+
+
+                    
+              </div>
+            </div>
+
+            <div class="panel panel-primary  main-panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title" id="panel-title"><span class="glyphicon glyphicon-star"></span> Nhà đang bán <a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
+              </div>
+              <div class="panel-body">
+                    <div class="col-sm-12 index_nha_dang_ban">
+                        <div class="col-sm-6"><a href="">Nhà dang bán tại di an, 1 tỷ, sổ đỏ, mặt dường</a></div>
+                        <div class="col-sm-2">Khu vực: abc xvwje</div>
+                        <div class="col-sm-2">Giá: 100 triệu</div>
+                        <div class="col-sm-2">Ngày đăng: 10/01/2015</div>
+                    </div>
+
+                    <div class="col-sm-12 index_nha_dang_ban">
+                        <div class="col-sm-6"><a href="">dqw  aNhà dang bán tại di an, 1 tỷ, sổ đỏ, mặt dường</a></div>
+                        <div class="col-sm-2">Khu vực: abc xvwje</div>
+                        <div class="col-sm-2">Giá: 100 triệu</div>
+                        <div class="col-sm-2">Ngày đăng: 10/01/2015</div>
+                    </div>
+                    <div class="col-sm-12 index_nha_dang_ban">
+                        <div class="col-sm-6"><a href="">fwae fw eNhà dang bán tại di an, 1 tỷ, sổ đỏ, mặt dường</a></div>
+                        <div class="col-sm-2">Khu vực: abc xvwje</div>
+                        <div class="col-sm-2">Giá: 100 triệu</div>
+                        <div class="col-sm-2">Ngày đăng: 10/01/2015</div>
+                    </div>
+                    <div class="col-sm-12 index_nha_dang_ban">
+                        <div class="col-sm-6"><a href="">fw ef wef wefweNhà dang bán tại di an, 1 tỷ, sổ đỏ, mặt dường</a></div>
+                        <div class="col-sm-2">Khu vực: abc xvwje</div>
+                        <div class="col-sm-2">Giá: 100 triệu</div>
+                        <div class="col-sm-2">Ngày đăng: 10/01/2015</div>
+                    </div>
+
+
+              </div>
+            </div>
+
+
+            <div class="panel panel-primary  main-panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title" id="panel-title"><span class="glyphicon glyphicon-star"></span> Đất đang bán <a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
+              </div>
+              <div class="panel-body">
+                    <div class="col-sm-12 index_dat_dang_ban">
+                        <div class="col-sm-6"><a href="">Nhà dang bán tại di an, 1 tỷ, sổ đỏ, mặt dường</a></div>
+                        <div class="col-sm-2">Khu vực: abc xvwje</div>
+                        <div class="col-sm-2">Giá: 100 triệu</div>
+                        <div class="col-sm-2">Ngày đăng: 10/01/2015</div>
+                    </div>
+
+                    <div class="col-sm-12 index_dat_dang_ban">
+                        <div class="col-sm-6"><a href="">dqw  aNhà dang bán tại di an, 1 tỷ, sổ đỏ, mặt dường</a></div>
+                        <div class="col-sm-2">Khu vực: abc xvwje</div>
+                        <div class="col-sm-2">Giá: 100 triệu</div>
+                        <div class="col-sm-2">Ngày đăng: 10/01/2015</div>
+                    </div>
+                    <div class="col-sm-12 index_dat_dang_ban">
+                        <div class="col-sm-6"><a href="">fwae fw eNhà dang bán tại di an, 1 tỷ, sổ đỏ, mặt dường</a></div>
+                        <div class="col-sm-2">Khu vực: abc xvwje</div>
+                        <div class="col-sm-2">Giá: 100 triệu</div>
+                        <div class="col-sm-2">Ngày đăng: 10/01/2015</div>
+                    </div>
+                    <div class="col-sm-12 index_dat_dang_ban">
+                        <div class="col-sm-6"><a href="">fw ef wef wefweNhà dang bán tại di an, 1 tỷ, sổ đỏ, mặt dường</a></div>
+                        <div class="col-sm-2">Khu vực: abc xvwje</div>
+                        <div class="col-sm-2">Giá: 100 triệu</div>
+                        <div class="col-sm-2">Ngày đăng: 10/01/2015</div>
+                    </div>
+              </div>
+            </div>
+
+        </div>
+
+
+        <!-- colum 2 -->
+        <div class="col-sm-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h3 class="panel-title" id="panel-title"><span class="glyphicon glyphicon-star"></span> Tìm theo chuyên mục<a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Nhà bán</li>
+                            <li>Đất bán</li>
+                            <li>Cho thuê</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h3 class="panel-title" id="panel-title"><span class="glyphicon glyphicon-star"></span> Tìm theo giá<a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>0->100</li>
+                            <li>100->200</li>
+                            <li>200->500</li>
+                            <li>200->500</li>
+                            <li>200->500</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h3 class="panel-title" id="panel-title"><span class="glyphicon glyphicon-star"></span> Tìm theo khu vực<a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li><a href="">Dĩ an</a></li>
+                            <li><a href="">Dĩ an</a></li>
+                            <li><a href="">Dĩ an</a></li>
+                            <li>Bình dương</li>
+                            <li>Thủ đức</li>
+                            <li>quận 9</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+<!-- <div class="fb-like-box" 
+   data-href="https://www.facebook.com/nha.dat.binh.duong.di.an"
+  data-colorscheme="light" 
+  data-show-faces="true" 
+  data-header="true" 
+  data-stream="false" 
+  data-show-border="true"
+  data-height="350px"
+   data-width="190px">
+</div> -->
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<div class="row-fluid" id="footer">
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="col-sm-3"><h3 style="text-align: center;">Thông Tin</h3>
+                <ul>
+                  <li><span class="glyphicon glyphicon-envelope"></span> miendongbds@yahoo.com.vn</li>
+                  
+                  <li><span class="glyphicon glyphicon-earphone"></span> 0944 710 748</li>
+                  
+                  <li><span class="glyphicon glyphicon-map-marker"></span> 478 Lê Hồng Phong, Tân Đông Hiệp, Dĩ An</li>
+              </ul>
+            </div>
+            <div class="col-sm-3"><h3 style="text-align: center;">Liên Kết</h3>
+                <ul>
+                  <li><span class="glyphicon glyphicon-envelope"></span> miendongbds@yahoo.com.vn</li>
+                  
+                  <li><span class="glyphicon glyphicon-earphone"></span> 0944 710 748</li>
+                  
+                  <li><span class="glyphicon glyphicon-map-marker"></span> 478 Lê Hồng Phong, Tân Đông Hiệp, Dĩ An</li>
+              </ul>
+            </div>
+            <div class="col-sm-5" style="padding-bottom: 20px; padding-top: 20px;">
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1427215331869" width="400" height="200" frameborder="0" style="border:0"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26081603.294420466!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1427215331869" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+
+        
+    </div>  
+</div>
+<div class="row-fluid" id="footer_ban_quyen" >
+    <div class="container ">
+      <div class="col-sm-12">
+        <div class="col-sm-8">Bản Quyền Nhà Đất Bình Dương</div>
+        <div class="col-sm-4">Phát triển bởi KN-XV Team</div>
+      </div>
+    </div>
+</div>
+
+
+</body>
+</html>
