@@ -2,9 +2,9 @@
 bất động sản anh Định
 Website bất động sản, phục vụ mua bán nhà đất.
 
-Hiển thị tốt trên tất cả các thiết bị (responsive).
+Hiển thị tốt trên tất cả các thiết bị (bootstrap responsive): mobile, tablet, desktop.
 
-Phân quyền người dùng.
+Phân quyền người dùng: public user, member, mod, admin, manager.
 
 
 Website: datdian.com.vn.
