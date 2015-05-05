@@ -3,6 +3,8 @@
     <h3 class="panel-title" id="panel-title"><span class="glyphicon glyphicon-star"></span> Tin Nổi Bật<a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
   </div>
   <div class="panel-body">
+        <h1>Nha Dat Di An</h1>
+        <h2>nhà đất dĩ an, nhà dĩ an giá rẻ</h2>
         <?php
         $this->widget('zii.widgets.CListView', array(
                                 'id' => 'list_noi_bat',
